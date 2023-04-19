@@ -10,13 +10,13 @@ const MainNavigation = () => {
             </Link>
             <nav>
                 <ul>
-                        <li>
-                            <Link href="/questions/nextjs">NextJs</Link>
-                        </li>
+                    <li>
+                        <Link href="/questions/nextjs">NextJs</Link>
+                    </li>
 
-                        <li>
-                            <Link href="/questions/typescript">Typescript</Link>
-                        </li>
+                    <li>
+                        <Link href="/questions/typescript">Typescript</Link>
+                    </li>
                 </ul>
             </nav>
         </header>
