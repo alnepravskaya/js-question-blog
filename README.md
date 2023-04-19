@@ -1,4 +1,4 @@
-https://js-question-blog-alnepravskaya.vercel.app/questions/typescript
+https://js-question-blog-alnepravskaya.vercel.app
 
 
 1.Copy .env.example to .env and set variables to a value
