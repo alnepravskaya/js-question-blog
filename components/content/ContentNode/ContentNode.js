@@ -95,15 +95,32 @@ const ContentNode = (props) => {
                 (item) => item.nodeType !== 'text' || !!item.value
             );
 
+            const codeItems = props.content.filter(
+                (item) => item.marks?.[0]?.type === CODE
+            );
+
             return (
                 <>
-                    {!!childItems.length && (
-                        <p>
-                            {childItems.map((item, index) => (
-                                <ContentNode key={index.toString()} {...item} />
-                            ))}
-                        </p>
-                    )}
+                    {!!childItems.length &&
+                        (!!codeItems.length ? (
+                            <div>
+                                {childItems.map((item, index) => (
+                                    <ContentNode
+                                        key={index.toString()}
+                                        {...item}
+                                    />
+                                ))}
+                            </div>
+                        ) : (
+                            <p>
+                                {childItems.map((item, index) => (
+                                    <ContentNode
+                                        key={index.toString()}
+                                        {...item}
+                                    />
+                                ))}
+                            </p>
+                        ))}
                 </>
             );
         }

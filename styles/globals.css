@@ -26,6 +26,9 @@ h6 {
   font-weight: 600;
 }
 
-.save-space {
-  white-space: pre-line
+code {
+  background: #f2f1f1;
+  display: block;
 }
+
+
