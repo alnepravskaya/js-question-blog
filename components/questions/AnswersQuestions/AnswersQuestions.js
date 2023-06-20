@@ -6,14 +6,14 @@ const AnswersQuestions = (props) => {
             {props.data.map((content, i) => (
                 <div key={content.sys.id}>
                     <div className="question">
-                        {content.question.json.content.map((info, i) => (
+                        {content.question?.json?.content.map((info, i) => (
                             <ContentNode
                                 key={content.sys.id + 'question' + i}
                                 {...info}
                             />
                         ))}
                     </div>
-                    {content.answer?.json.content.map((info, i) => (
+                    {content.answer?.json?.content.map((info, i) => (
                         <ContentNode
                             key={content.sys.id + 'answer' + i}
                             {...info}
