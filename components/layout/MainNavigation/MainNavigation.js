@@ -17,6 +17,9 @@ const MainNavigation = () => {
                     <li>
                         <Link href="/questions/typescript">Typescript</Link>
                     </li>
+                    <li>
+                        <Link href="/questions/react">React</Link>
+                    </li>
                 </ul>
             </nav>
         </header>
